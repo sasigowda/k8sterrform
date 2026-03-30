@@ -11,7 +11,7 @@ terraform {
 
 provider "aws" {
   region = local.region
-
+  profile = "myprofile"
   default_tags {
     tags = {
       Environment = local.env
